@@ -1,6 +1,6 @@
 # Cover Letter Generator
 
-Introducing the Cover Letter Generator, a cutting-edge tool crafted to help you craft an impeccable cover letter for your ideal job. It combines the capabilities of Streamlit and OpenAI to deliver a customized and polished cover letter that suits your specific requirements.
+Introducing the Cover Letter Generator, a cutting-edge tool crafted to help you craft an impeccable cover letter for your ideal job. It combines the capabilities of Streamlit and OpenAI to deliver a customized and polished cover letter that suits your specific requirements hi.
 
 ![demo](demos/demo.gif)
 
