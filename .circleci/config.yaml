@@ -22,7 +22,17 @@ jobs:
           name: Running tests
           command: |
             . venv/bin/activate
-            pytest --junitxml=junit.xml || echo 'Tests failed. See above for details.'
+            pytest --junitxml=junit.xml
+            exit_code=$?
+            echo "Exit Code: $exit_code"
+            if [ $exit_code -eq 0 ]; then
+              echo 'Tests passed.'
+            elif [ $exit_code -eq 5 ]; then
+              echo 'No tests found.'
+            else
+              echo 'Tests failed. See above for details.'
+              exit $exit_code
+            fi
       - store_artifacts:
           path: test-reports/
           destination: python_app
